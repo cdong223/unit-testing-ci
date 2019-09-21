@@ -4,8 +4,8 @@ from string import punctuation
 def is_tachycardic(w):
     str = "tachycardic"
     removable = punctuation + " "
-    w = w.strip(removable) # remove all leading/trailing spaces & punctuation
-    w = w.lower() # make all letters lowercase
+    w = w.strip(removable)  # remove all leading/trailing spaces & punctuation
+    w = w.lower()  # make all letters lowercase
     print(w == str)
     return
 
