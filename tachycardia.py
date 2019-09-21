@@ -6,12 +6,13 @@ def is_tachycardic(w):
     removable = punctuation + " "
     w = w.strip(removable)  # remove all leading/trailing spaces & punctuation
     w = w.lower()  # make all letters lowercase
-    print(w == str)
-    return
+    result = w == str
+    print(result)
+    return result
 
 
 def user_interface():
-    word = input("Enter a word(enter 9 to quit): ")
+    word = input("Enter a word: ")
     is_tachycardic(word)
     return
 
